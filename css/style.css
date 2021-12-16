@@ -1,0 +1,19 @@
+/* color swatches */
+:root {
+  --swatch-black: #000000;
+  --swatch-dark-gray: #222222;
+  --swatch-white: #ffffff;
+}
+
+/* default variables */
+:root {
+  --surface-color: var(--swatch-black);
+  --on-surface-color: var(--swatch-white);
+  --background-color: var(--swatch-dark-gray);
+  --on-background-color: var(--swatch-white);
+}
+
+body {
+  background: var(--surface-color);
+  color: var(--on-surface-color);
+}
