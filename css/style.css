@@ -1,3 +1,6 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+
 /* color swatches */
 :root {
   --swatch-black: #000000;
@@ -13,7 +16,34 @@
   --on-background-color: var(--swatch-white);
 }
 
-body {
+html {
   background: var(--surface-color);
+}
+
+body {
+  background: linear-gradient(180deg, var(--surface-color) 0%, var(--background-color) 5%, var(--background-color) 100%) fixed;
   color: var(--on-surface-color);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+header {
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 40px;
+}
+
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  max-height: 90vh;
+}
+
+section.header {
+  min-height: 90vh;
 }
