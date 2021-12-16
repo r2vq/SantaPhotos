@@ -4,24 +4,40 @@
 /* color swatches */
 :root {
   --swatch-black: #000000;
-  --swatch-dark-gray: #222222;
+  --swatch-dark-gray: #242222;
+  --swatch-transparent-gray: rgba(3, 3, 3, 0.3);
+  --swatch-light-gray: #444040;
+  --swatch-red: #991111;
   --swatch-white: #ffffff;
 }
 
 /* default variables */
 :root {
-  --surface-color: var(--swatch-black);
-  --on-surface-color: var(--swatch-white);
-  --background-color: var(--swatch-dark-gray);
+  --background-color: var(--swatch-light-gray);
   --on-background-color: var(--swatch-white);
+  --border-color: var(--swatch-black);
+  --shadow-color: var(--swatch-transparent-gray);
+  --surface-color: var(--swatch-dark-gray);
+  --on-surface-color: var(--swatch-white);
 }
 
 html {
   background: var(--surface-color);
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 body {
-  background: linear-gradient(180deg, var(--surface-color) 0%, var(--background-color) 5%, var(--background-color) 100%) fixed;
+  align-items: center;
+  background: var(--surface-color);
   color: var(--on-surface-color);
   display: flex;
   flex-direction: column;
@@ -30,9 +46,26 @@ body {
   margin: 0;
 }
 
+article {
+  align-items: center;
+  background: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px var(--shadow-color);
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  max-width: 500px;
+  overflow: hidden;
+}
+
 header {
   font-family: 'Mountains of Christmas', cursive;
   font-size: 40px;
+}
+
+img.photo {
+  max-height: 80vh;
+  max-width: 100%;
 }
 
 section {
@@ -41,9 +74,25 @@ section {
   flex-direction: column;
   gap: 10px;
   justify-content: center;
-  max-height: 90vh;
+  max-width: 90vw;
 }
 
 section.header {
-  min-height: 90vh;
+  min-height: 85vh;
+}
+
+subheader {
+  padding: 40px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 800px) {
+  nav {
+    position: fixed;
+    right: 40px;
+    top: 40px;
+  }
 }

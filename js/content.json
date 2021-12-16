@@ -1,0 +1,120 @@
+{
+  "header": {
+    "title": "Sibling Santa Snap Shots",
+    "body": "Every year my sisters and I take a photo with Santa. Here they are collected."
+  },
+  "years": [{
+      "id": "year2011",
+      "title": "2011",
+      "photos": [{
+          "image": "img/201101.jpg",
+          "alt": "2011 original",
+          "body": "We decided to do a themed photo for the first time. Our original idea was Santa's Secret Service but everyone kept saying Men in Black so we went with it."
+        },
+        {
+          "image": "img/201102.jpg",
+          "alt": "2011 with Mama",
+          "body": "We didn't know our grandmother was even in the country at the time so when we bumped into her at the mall we said, you're taking a photo with us."
+        }
+      ]
+    },
+    {
+      "id": "year2012",
+      "title": "2012",
+      "photos": [{
+        "image": "img/201201.jpg",
+        "alt": "2012: Minions!",
+        "body": "We decided to do a themed photo for the first time. Our original idea was Santa's Secret Service but everyone kept saying Men in Black so we went with itMinions! We borrowed a bunch of minion toys from our friends and that's a Fruit Ninja banana."
+      }]
+    },
+    {
+      "id": "year2013",
+      "title": "2013",
+      "photos": [{
+        "image": "img/201301.jpg",
+        "alt": "2013: Animal Onesies!",
+        "body": "Animal Onesies! This year we were a little pressed for time but we were okay with how it turned out. This is also the first year we decided to get digital versions of the photos."
+      }]
+    },
+    {
+      "id": "year2014",
+      "title": "2014",
+      "photos": [{
+        "image": "img/201401.jpg",
+        "alt": "2014: Alvin and the Chipmunks",
+        "body": "Alvin and the Chipmunks. My sister came up with the idea because we used to listen to the Christmas album every year. Pretty happy with how this one turned out. :)"
+      }]
+    },
+    {
+      "id": "year2015",
+      "title": "2015",
+      "photos": [{
+        "image": "img/201501.jpg",
+        "alt": "2015: Star Wars",
+        "body": "Princess Leia, Rey, Luke. Once again, my sister came up with the idea. Can't say no the Star Wars though. Since one sister was old movie Leia, and the other sister was new movie Rey, I decided to be a generic X-wing Pilot so that I can say I'm Luke or Po from old or new trilogy."
+      }, {
+        "image": "img/201502.jpg",
+        "alt": "2015: Star Wars Part 2!",
+        "body": "We also had my twin brother join us this year. In this shot, Leia is holding the blaster backwards. Whoops!\n\nIf you look closely, you'll also see BB-8 in Santa's hand. He was very excited about the movies, he said. And wished us goodbye with \"May the Force be with you.\""
+      }]
+    },
+    {
+      "id": "year2016",
+      "title": "2016",
+      "photos": [{
+        "image": "img/201601.jpg",
+        "alt": "2016: Holidays",
+        "body": "From left to right we have: Tooth Fairy, Santa Claus, Easter Bunny, and Cupid."
+      }]
+    },
+    {
+      "id": "year2017",
+      "title": "2017",
+      "photos": [{
+        "image": "img/201701.jpg",
+        "alt": "2017: Arthur",
+        "body": "Arthur, D.W., Kate, and Pal visit Santa!"
+      }]
+    },
+    {
+      "id": "year2018",
+      "title": "2018",
+      "photos": [{
+        "image": "img/201801.jpg",
+        "alt": "2018 Super Smash Bros",
+        "body": "From left to right:\n- Benji as Mario\n- Keane as Luigi\n- Reah as Ness\n- Angel as Pikachu\n- Santa holding Sonic\n- Hannah as Link\n- Wayne as Little Mac"
+      }]
+    },
+    {
+      "id": "year2019",
+      "title": "2019",
+      "photos": [{
+        "image": "img/201901.jpg",
+        "alt": "2019 Santas",
+        "body": "This one has Santa in it. Yet... somehow feels like not enough Santa...\n\nFrom left to right:\n- Santa\n- Santa\n- Santa\n- Santa"
+      },{
+        "image": "img/201902.png",
+        "alt": "2019 Santa Convention",
+        "body": "2019b - Santa Convention\n\nAh now THAT is a Santa Claus photo"
+      }]
+    },
+    {
+      "id": "year2020",
+      "title": "2020",
+      "photos": [{
+        "image": "img/202001.jpg",
+        "alt": "Zoom!",
+        "body": "2020 - Santa Photo Number 10. Social Distancing Edition\n\nSpecial guests: All of the above"
+      }]
+    },
+    {
+      "id": "year2021",
+      "title": "2021",
+      "photos": [{
+        "image": "img/202101.jpg",
+        "alt": "Masked Up",
+        "body": "2021 - Santa Photo Number 11. Frozen Face Edition\n\nWe had to wear masks this year so we incorporated it into our outfits."
+      }]
+    }
+  ]
+}
