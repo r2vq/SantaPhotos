@@ -1,9 +1,20 @@
 // Main Method
 (() => {
-  console.log("Hello world!");
   fetch("js/content.json")
     .then(response => response.json())
     .then(data => buildPage(data));
+
+  let prevScrollPos = window.pageYOffset;
+  window.onscroll = function() {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollPos - currentScrollPos > 5) {
+      document.querySelector("nav").classList.remove("hidden");
+    }
+    if (currentScrollPos - prevScrollPos > 25) {
+      document.querySelector("nav").classList.add("hidden");
+    }
+    prevScrollPos = currentScrollPos
+  };
 })();
 /**
  * Build the page from the JSON provided.
@@ -37,6 +48,13 @@ function buildNav(data) {
     li.appendChild(anchor);
     anchor.setAttribute("href", `javascript:scrollTo("${year.id}")`);
     anchor.innerText = year.title;
+    new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting === true) {
+        li.classList.add("highlight");
+      } else {
+        li.classList.remove("highlight");
+      }
+    }).observe(document.querySelector(`#${year.id}`));
   });
 
   return nav;
