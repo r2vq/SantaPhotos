@@ -21,6 +21,9 @@ function buildPage(data) {
 
   let nav = buildNav(data.years);
   document.body.appendChild(nav);
+
+  let preview = buildPreview();
+  document.body.appendChild(preview);
 }
 
 function buildNav(data) {
@@ -72,8 +75,39 @@ function buildArticle(data) {
   image.classList.add("photo");
   image.setAttribute("src", data.image);
   image.setAttribute("alt", data.alt);
+  image.addEventListener("click", () => {
+    let preview = document.querySelector("preview");
+    preview.classList.remove("hidden");
+    preview.classList.add("fadeIn");
+    let largeImage = document.createElement("img");
+    preview.appendChild(largeImage);
+    largeImage.classList.add("largePhoto");
+    largeImage.setAttribute("src", data.image);
+    largeImage.setAttribute("alt", data.alt);
+    document.body.classList.add("stopScrolling");
+  });
   let subheader = document.createElement("subheader");
   article.appendChild(subheader);
   subheader.innerText = data.body;
   return article;
+}
+
+function buildPreview() {
+
+  function onAnimationEnd() {
+    preview.classList.remove("fadeOut");
+    preview.classList.add("hidden");
+    preview.innerHTML = "";
+    preview.removeEventListener("animationend", onAnimationEnd);
+  }
+
+  let preview = document.createElement("preview");
+  preview.classList.add("hidden");
+  preview.addEventListener("click", () => {
+    preview.classList.remove("fadeIn");
+    preview.classList.add("fadeOut");
+    preview.addEventListener("animationend", onAnimationEnd);
+    document.body.classList.remove("stopScrolling");
+  });
+  return preview;
 }
