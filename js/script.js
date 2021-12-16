@@ -35,11 +35,15 @@ function buildNav(data) {
     ul.appendChild(li);
     let anchor = document.createElement("a");
     li.appendChild(anchor);
-    anchor.setAttribute("href", `#${year.id}`);
+    anchor.setAttribute("href", `javascript:scrollTo("${year.id}")`);
     anchor.innerText = year.title;
   });
 
   return nav;
+}
+
+function scrollTo(id) {
+  document.getElementById(id).scrollIntoView(true);
 }
 
 function buildHeader(data) {
