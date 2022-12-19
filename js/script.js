@@ -1,6 +1,6 @@
 // Main Method
-(() => {
-  fetch("js/content.json")
+(async () => {
+  await fetch("js/content.json")
     .then(response => response.json())
     .then(data => buildPage(data));
 
@@ -15,6 +15,10 @@
     }
     prevScrollPos = currentScrollPos
   };
+
+  if (window.location.hash) {
+    scrollTo(window.location.hash.substring(1));
+  }
 })();
 /**
  * Build the page from the JSON provided.
@@ -61,7 +65,8 @@ function buildNav(data) {
 }
 
 function scrollTo(id) {
-  document.getElementById(id).scrollIntoView(true);
+  const element = document.getElementById(id);
+  element && element.scrollIntoView(true);
 }
 
 function buildHeader(data) {
