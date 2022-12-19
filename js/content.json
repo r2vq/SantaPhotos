@@ -139,6 +139,17 @@
           "body": "2021 - Santa Photo Number 11. Frozen Face Edition\n\nWe had to wear masks this year so we incorporated it into our outfits."
         }
       ]
+    },
+    {
+      "id": "year2022",
+      "title": "2022",
+      "photos": [
+        {
+          "image": "img/202201.png",
+          "alt": "Throw back",
+          "body": "2022 - Santa Photo Number 12. We finally have enough progeny to recreate the grandmother photo from the original year."
+        }
+      ]
     }
   ]
 }
