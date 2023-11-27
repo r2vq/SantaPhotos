@@ -150,6 +150,28 @@
           "body": "2022 - Santa Photo Number 12. We finally have enough progeny to recreate the grandmother photo from the original year."
         }
       ]
+    },
+    {
+      "id": "year1998",
+      "title": "1998",
+      "photos": [
+        {
+          "image": "img/199801.jpeg",
+          "alt": "Throw back",
+          "body": "1998 - Santa Photo Number -1\n\nI'm just a kid, and life is a nightmare."
+        }
+      ]
+    },
+    {
+      "id": "year2023",
+      "title": "2023",
+      "photos": [
+        {
+          "image": "img/202301.jpg",
+          "alt": "Throw back",
+          "body": "2023 - Santa Photo Number 13\n\nI'm just a kid, I know that it's not fair."
+        }
+      ]
     }
   ]
 }
