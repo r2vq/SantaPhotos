@@ -172,6 +172,17 @@
           "body": "2023 - Santa Photo Number 13\n\nI'm just a kid, I know that it's not fair."
         }
       ]
+    },
+    {
+      "id": "year2024",
+      "title": "2024",
+      "photos": [
+        {
+          "image": "img/202401.jpg",
+          "alt": "",
+          "body": "Olympics. We'd never make it to the real olympics so we thought we'd honour the big stars from this year's."
+        }
+      ]
     }
   ]
 }
